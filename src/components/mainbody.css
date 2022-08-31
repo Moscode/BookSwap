@@ -1,0 +1,30 @@
+.main {
+    display: flex;
+}
+
+.main__heroImage {
+    margin-right: -9rem;
+}
+
+.main__hero {
+    margin: auto 0;
+}
+
+.main__hero h2 {
+    color: #0FA3B1;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main__hero p {
+    color: #0fa3b191;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.main__hero i {
+    margin-left: 35%;
+    color: #0fa3b191;
+    font-weight: bolder;
+}
