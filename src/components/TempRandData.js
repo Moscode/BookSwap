@@ -5,10 +5,9 @@ const DevsData = ({devs_list}) => {
     const tech_stacks = ["HTML", "CSS", "React"]
     /*const days_avail = 3
     const company = "Google"*/
-    devs_list && console.log(devs_list)
     return (
         <>
-        <h2>Top Contributor</h2>
+        <h2 style={{paddingBottom: '40px'}}>Top Contributors</h2>
         <div className='section'>
             {devs_list?.map((dev_data, index) => (
                     <figure className="dev" key={index}>

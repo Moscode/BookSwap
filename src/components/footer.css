@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Code+Pro:wght@400;600&display=swap');
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /*background-color: #000;*/
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.footer h1{
+    color: #0FA3B1;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+}
+
+.footer li{
+    list-style: none;
+    padding-top: 1rem;
+    width: 120%;
+    margin-left: -2%;
+    color: rgba(75, 75, 75, 0.438);
+}

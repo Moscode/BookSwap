@@ -3,7 +3,7 @@ import heroImage from './images/pair-programming.jpg'
 import "./mainbody.css"
 
 function MainBody() {
-    const motto = "< Connect with Pairs and Pair Programme or Design />"
+    const motto = "<Connect with Pairs and Pair Programme or Design/>"
   return (
     <div className='main'>
         <div className='main__hero'>
