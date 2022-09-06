@@ -28,3 +28,34 @@
     color: #0fa3b191;
     font-weight: bolder;
 }
+
+@media screen and (max-width: 1090px) {
+    .main {
+        display: block;
+    }
+    .main__hero {
+        margin: 10% auto;
+        word-spacing: 0.3rem;
+    }
+    
+    .main__hero h2 {
+        color: #0FA3B1;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        margin-left: 10%;
+    }
+    
+    .main__hero p {
+        color: #0fa3b191;
+        font-weight: bold;
+        font-size: medium;
+        margin-bottom: 20px;
+        margin-left: 10%;
+    }
+    .main__hero i{
+        margin-left: 30%;
+    }
+    .main__heroImage {
+        display: none;
+    }
+}
