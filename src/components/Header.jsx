@@ -1,32 +1,33 @@
-import React, {useState} from 'react'
-import "./header.css"
-import {GiHamburgerMenu} from 'react-icons/gi'
-
-function Header() {
-  const [show, setShow] = useState(true)
-
-  const showMenu = () => {
-    setShow(!show)
-  }
+import React from 'react'
+import {BiSearch} from 'react-icons/bi'
+import {AiOutlineShoppingCart, AiOutlineMenu} from 'react-icons/ai'
+const Header = () => {
   return (
-    <div className='header'>
-      <div className='header__logo'>
-        <h1>Pair</h1>
-      </div>
-      <div className='header__links'>
-        <button onClick={showMenu}>
-          <GiHamburgerMenu id='hamburger'/>
-        </button>
-          <h4 className={show ? 'header__text' : null}><a href='../pages/About'>About</a></h4>
-          <h4 className={show ? 'header__text' : null}><a href='../pages/Mission'>Mission</a></h4>
-          <h4 className={show ? 'header__text' : null}><a href='../pages/Products'>Products</a></h4>
-      </div>
-      <div className={show ? 'header__buttons' : null}>
-          <button className='login'>Login</button>
-          <button className='signup'>Sign Up</button>
-      </div>
-      </div>
+    <header>
+        <img src="https://img.freepik.com/free-vector/flat-design-library-logo-template_23-2149325326.jpg?w=2000" alt="" className='logo'/>
+        <div className="inputBox">
+            <input type="text" placeholder='Search for genres...'/>
+            <BiSearch className='searchIcon'/>
+        </div>
+        <div className='shoppingCart'>
+            <AiOutlineShoppingCart className='cart'/>
+            <div className='cartContent'>
+              <p>2</p>
+            </div>
+        </div>
+        <div className='profileContainer'>
+          <div className='imgBox'>
+            <img src='https://randomuser.me/api/portraits/med/men/98.jpg' alt='' className='profilePic'/>
+          </div>
+          <div className='profileUsername'>
+            <h2>Odunosho Moses</h2>
+          </div>
+        </div>
+        <div className='toggleMenu'>
+          <AiOutlineMenu className='toggleBar'/>
+        </div>
+    </header>
   )
 }
 
-export default Header;
+export default Header
