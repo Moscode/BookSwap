@@ -1,10 +1,12 @@
 import React from 'react'
 import {BiSearch} from 'react-icons/bi'
 import {AiOutlineShoppingCart, AiOutlineMenu} from 'react-icons/ai'
+
+import bookstore from '../assets/bookstore.png'
 const Header = () => {
   return (
     <header>
-        <img src="https://img.freepik.com/free-vector/flat-design-library-logo-template_23-2149325326.jpg?w=2000" alt="" className='logo'/>
+        <img src={bookstore} alt="" className='logo'/>
         <div className="inputBox">
             <input type="text" placeholder='Search for genres...'/>
             <BiSearch className='searchIcon'/>
