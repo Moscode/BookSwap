@@ -181,6 +181,7 @@ main .mainContainer .bookContainer .bookSort .sortByPrice .price > p{
     font-size: 0.7rem;
     font-weight: 600;
     color: #767a81;
+    cursor: pointer;
 }
 
 main .mainContainer .bookContainer .bookSort .sortByPrice .price .sortTab p:first-child.tab{
@@ -189,7 +190,7 @@ main .mainContainer .bookContainer .bookSort .sortByPrice .price .sortTab p:firs
 
 main .mainContainer .bookContainer .bookSort .sortByPrice .price .sortTab p.tab.active:first-child{
     border-left: 0.03rem solid #e70680;
-    margin-left: 0;
+    margin-left: 0px;
 }
 
 main .mainContainer .bookContainer .bookSort .sortByPrice .price .sortTab p.tab.active{
@@ -204,7 +205,96 @@ main .mainContainer .bookContainer .bookSort .sortByPrice .price .sortTab p.tab{
     padding: 4px 8px;
 }
 
+.mainContainer .bookContainer .rowContainer{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 5px;
+}
 
+
+.mainContainer .bookContainer .rowContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.mainContainer .bookContainer .rowContainer .rowMenuCategory{
+    width: 100px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 10px;
+}
+
+.mainContainer .bookContainer .rowContainer .rowMenuCategory.active{
+    background-color: #fba100;
+}
+
+.mainContainer .bookContainer .rowContainer .rowMenuCategory.active h3{
+    color: #fff;
+}
+
+.mainContainer .bookContainer .rowContainer .rowMenuCategory.active .genreToggle{
+    background-color: #fff;
+}
+
+.mainContainer .bookContainer .rowContainer .rowMenuCategory.active .genreToggle svg{
+    color: #fba100;
+}
+
+.mainContainer .bookContainer .rowContainer .rowMenuCategory.active .cardImg{
+    background-color: #fba100;
+}
+
+.mainContainer .bookContainer .rowContainer .rowMenuCategory .cardImg{
+    width: 50%;
+    height: 50px;
+    border-radius: 100vw;
+    background-color: #fff;
+    padding: 2px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.mainContainer .bookContainer .rowContainer .rowMenuCategory .cardImg img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.mainContainer .bookContainer .rowContainer .rowMenuCategory h3{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fba100;
+    border-radius: 5px;
+    transition: 0.5;
+}
+
+.mainContainer .bookContainer .rowContainer .rowMenuCategory .genreToggle{
+    background-color: #fba100;
+    padding: 2px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer .bookContainer .rowContainer .rowMenuCategory .genreToggle svg{
+    color: #fff;
+    font-size: 10px;
+}
 /* Main Container End */
 
 /* Footer Container Start */

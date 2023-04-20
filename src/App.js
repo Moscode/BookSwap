@@ -1,19 +1,27 @@
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css';
 import Header from './components/Header';
 import MenuContainer from './components/MenuContainer'
 import BannerContent from './components/BannerContent'
 import MenuCard from './components/MenuCard'
+import MenuCategory from './components/MenuCategory'
 
 import bannerimage from './assets/bannerimage.jpg'
+import lawsOfPower from './assets/selfhelpgenre.png'
 
 import {AiFillHome} from 'react-icons/ai'
 import {BsFillChatLeftTextFill} from 'react-icons/bs'
 import {MdFavorite} from 'react-icons/md'
 import {FiSettings} from 'react-icons/fi'
 
-
 function App() {
+
+  const [bookCategories, setbookCategories] = useState(
+    {
+      selfHelp: false,
+      romance: false
+    }
+  )
 
   useEffect(()=>{
     const menuLi = document.querySelectorAll("#menu li");
@@ -36,11 +44,21 @@ function App() {
             <BannerContent discount={70} link={"#"}/>
           </div>
           <div className='bookContainer'>
-          <div className='bookSort'>
-            <MenuCard menutype={"Books"}/>
-          </div>
-          <div className='rowContainer'></div>
-          <div className='bookItemContainer'></div>
+            <div className='bookSort'>
+              <MenuCard menutype={"Books"}/>
+            </div>
+            <div className='rowContainer'>
+              <div>
+                <MenuCategory imgSrc={lawsOfPower} genre={"Self-Help"} 
+                activeCategory={true} />
+              </div>
+              <div>
+                <MenuCategory imgSrc={lawsOfPower} genre={"Self-Help"} activeCategory={true}/>
+              </div>
+            </div>
+            <div className='bookItemContainer'>
+              
+            </div>
           </div>
           <div className='rightMenu'>
           </div>
