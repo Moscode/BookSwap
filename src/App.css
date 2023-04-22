@@ -222,6 +222,7 @@ main .mainContainer .bookContainer .bookSort .sortByPrice .price .sortTab p.tab{
 
 .mainContainer .bookContainer .rowContainer .rowMenuCategory{
     width: 100px;
+    height: 100px;
     background-color: #fff;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -233,6 +234,7 @@ main .mainContainer .bookContainer .bookSort .sortByPrice .price .sortTab p.tab{
     cursor: pointer;
     transition: 0.5s;
     margin-right: 10px;
+    text-align: center;
 }
 
 .mainContainer .bookContainer .rowContainer .rowMenuCategory.active{
@@ -295,6 +297,85 @@ main .mainContainer .bookContainer .bookSort .sortByPrice .price .sortTab p.tab{
     color: #fff;
     font-size: 10px;
 }
+
+/* BookItemContainer Start*/
+.bookItemContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bookItemContainer .bookItemCard{
+    width: 100%;
+    max-height: 28.125rem;
+    display: flex;
+    padding: 2rem;
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+.bookItemContainer .bookItemCard .imgBox {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+}
+
+.bookItemContainer .bookItemCard .imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.bookItemContainer .bookItemCard .isFavorite svg{
+    font-size: 20px;
+    color: #ff000088;
+}
+
+.bookItemContainer .bookItemCard .isFavorite.active svg{
+    color: #ff0000;
+    filter: drop-shadow(0px, 0px, 8px, #ff0000);
+}
+
+.bookItemContainer .bookItemCard .bookItemContent{
+    display: flex;
+    flex-direction: column;
+    padding-left: 7px;
+}
+
+.bookItemContainer .bookItemCard .bookItemContent h3{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+}
+
+.bookItemContainer .bookItemCard .bookItemContent .bookWorth{
+    color: #1c1d1f;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.bookItemContainer .bookItemCard .bookItemContent .bookRating .reviewCount{
+    color: #9b9b9b;
+    font: 0.75rem;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.orange {
+    color: #fba100;
+}
+
+.gray{
+    color:rgb(158, 158, 158);
+}
+
+/* BookItemContainer End*/
+
 /* Main Container End */
 
 /* Footer Container Start */
